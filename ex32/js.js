@@ -1,8 +1,8 @@
 function clicou () {
-    console.log("Clicou no botão")
+    const teste = document.querySelector("#teste")
+    const ul = teste.querySelector("ul")
+
+    ul.children[0].innerHTML= `Item <i> Alterado! </i>`
+    console.log(ul.outerHTML)
 }
 
-let doc = document.querySelector(".botao")
-doc.addEventListener("click", () => {
-    clicou()
-})
